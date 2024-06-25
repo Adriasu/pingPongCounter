@@ -100,3 +100,11 @@ btnReset.addEventListener("click", () => {
   img.src = "https://i.gifer.com/GAve.gif";
 });
 
+document.addEventListener("keydown", (event) => {
+  counterPlayer1 = 0;
+  counterPlayer2 = 0;
+  h1.innerHTML = `${counterPlayer1} to ${counterPlayer2}`;
+  btnCounterPlayer1.disabled = false;
+  btnCounterPlayer2.disabled = false;
+  img.src = "https://i.gifer.com/GAve.gif";
+});
