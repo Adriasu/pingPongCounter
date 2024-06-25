@@ -31,10 +31,10 @@ divBtnContain.appendChild(btnCounterPlayer1);
 divBtnContain.appendChild(btnCounterPlayer2);
 divBtnContain.appendChild(btnReset);
 
-divBtnContain.id = "buttons"
-btnCounterPlayer1.id = "btn1"
-btnCounterPlayer2.id = "btn2"
-btnReset.id = "btnReset"
+divBtnContain.id = "buttons";
+btnCounterPlayer1.id = "btn1";
+btnCounterPlayer2.id = "btn2";
+btnReset.id = "btnReset";
 
 img.src = "https://i.gifer.com/GAve.gif";
 h1.innerHTML = "0 to 0";
@@ -53,7 +53,7 @@ option10.value = 10;
 option15.value = 15;
 btnCounterPlayer1.innerHTML = "+1 Player 1";
 btnCounterPlayer2.innerHTML = "+1 Player 2";
-btnReset.innerHTML = "Reset";
+btnReset.innerHTML = "RESTART GAME";
 
 let counterPlayer1 = 0;
 let counterPlayer2 = 0;
@@ -66,6 +66,7 @@ inputSelect.addEventListener("change", () => {
   h1.innerHTML = `${counterPlayer1} to ${counterPlayer2}`;
   btnCounterPlayer1.disabled = false;
   btnCounterPlayer2.disabled = false;
+  img.src = "https://i.gifer.com/GAve.gif";
 });
 
 btnCounterPlayer1.addEventListener("click", () => {
@@ -73,6 +74,8 @@ btnCounterPlayer1.addEventListener("click", () => {
   if (counterPlayer1 === points) {
     btnCounterPlayer1.disabled = true;
     btnCounterPlayer2.disabled = true;
+    img.src =
+      "https://img.itch.zone/aW1hZ2UvNDc4NTkvMjExMjY5LmdpZg==/original/iEdCFj.gif";
   }
   h1.innerHTML = `${counterPlayer1} to ${counterPlayer2}`;
 });
@@ -82,6 +85,8 @@ btnCounterPlayer2.addEventListener("click", () => {
   if (counterPlayer2 === points) {
     btnCounterPlayer1.disabled = true;
     btnCounterPlayer2.disabled = true;
+    img.src =
+      "https://img.itch.zone/aW1hZ2UvNDc4NTkvMjExMjYyLmdpZg==/original/V5R6XE.gif";
   }
   h1.innerHTML = `${counterPlayer1} to ${counterPlayer2}`;
 });
@@ -92,4 +97,6 @@ btnReset.addEventListener("click", () => {
   h1.innerHTML = `${counterPlayer1} to ${counterPlayer2}`;
   btnCounterPlayer1.disabled = false;
   btnCounterPlayer2.disabled = false;
+  img.src = "https://i.gifer.com/GAve.gif";
 });
+
