@@ -31,9 +31,14 @@ divBtnContain.appendChild(btnCounterPlayer1);
 divBtnContain.appendChild(btnCounterPlayer2);
 divBtnContain.appendChild(btnReset);
 
+divBtnContain.id = "buttons"
+btnCounterPlayer1.id = "btn1"
+btnCounterPlayer2.id = "btn2"
+btnReset.id = "btnReset"
+
 img.src = "https://i.gifer.com/GAve.gif";
 h1.innerHTML = "0 to 0";
-labelPoints.innerHTML = "Max points";
+labelPoints.innerHTML = "Max points: ";
 inputSelect.name = "maxPoints";
 inputSelect.id = "maxPoints";
 option3.innerHTML = 3;
@@ -49,8 +54,6 @@ option15.value = 15;
 btnCounterPlayer1.innerHTML = "+1 Player 1";
 btnCounterPlayer2.innerHTML = "+1 Player 2";
 btnReset.innerHTML = "Reset";
-
-//console.log(maxPoints.value);
 
 let counterPlayer1 = 0;
 let counterPlayer2 = 0;

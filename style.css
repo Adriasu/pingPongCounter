@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Playwrite DE Grund;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://img.freepik.com/fotos-premium/fondo-formularios-digitales-abstractos-forma-trapcode-puntos-lineas-brillantes-fondo_799261-292.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 2px rgb(241, 27, 213);
+    margin: 60px;
+    min-width: 300px;
+    min-height: 600px;
+    border-radius: 20px;
+    background: rgba(1, 18, 75, 0.5);
+    box-shadow: rgb(93 24 220) 0px 10px 39px 0px;
+}
+
+img{
+    border-radius: 20px;
+    width: 600px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+label{
+    color: white;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#btn1{
+    border-radius: 5px 5px 5px 20px;
+    background-color: rgba(0, 132, 255, 0.5);
+}
+
+#btn2{
+    border-radius: 5px 5px 5px 5px;
+    background-color: rgba(255, 2, 255, 0.5);
+}
+
+#btnReset{
+    border-radius: 5px 5px 20px 5px;
+    background-color: rgba(255, 0, 0, 0.5);
+}
